@@ -238,7 +238,7 @@ def forgot_password():
         passToken = passToken.replace('.', '-')
 
         # Create a password reset link with the token
-        reset_link = frontend_url + "reset-password/" + passToken
+        reset_link = frontend_url + "/reset-password/" + passToken
 
         # Create the email
         message = Mail(
